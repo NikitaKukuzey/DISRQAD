@@ -42,7 +42,7 @@ renderMetrics();
 
 function renderConditions() {
   const rows = data.conditions.filter(c => c.family === $('condition-family').value && c.factor === $('condition-factor').value);
-  $('conditions-body').innerHTML = rows.map(r => `<tr><td>${escapeHTML(r.subset)}</td>${r.values.map(v=>`<td class="heat-cell" style="background:rgba(7,92,86,${Math.max(0,v)*.19})">${v.toFixed(3)}</td>`).join('')}</tr>`).join('');
+  $('conditions-body').innerHTML = rows.map(r => `<tr><td>${escapeHTML(r.subset)}</td>${r.values.map(v=>`<td class="heat-cell" style="background:rgba(var(--accent-rgb),${Math.max(0,v)*.19})">${v.toFixed(3)}</td>`).join('')}</tr>`).join('');
 }
 ['condition-family','condition-factor'].forEach(id=>$(id).addEventListener('change',renderConditions));
 renderConditions();
