@@ -37,5 +37,3 @@ Unused project assets remain in the repository but are not displayed in the visu
 - Exact numeric data: `assets/data.js`.
 - After arXiv release, replace `arxiv-placeholder` with an anchor to the actual abstract URL; update status and citation; remove the placeholder click handler in `app.js`.
 - To regenerate previews and data, run `scripts/prepare_assets.py` with the source LaTeX folder, original PDF and `pdftoppm` executable. The optional preparation script requires Pillow and pypdf; GitHub Pages does not run it.
-
-Inspired by [FGResQ](https://sxfly99.github.io/FGResQ-Home/) and [A-FINE](https://tianhewu.github.io/A-FINE-page.github.io/), with original styling. Locally hosted WebP previews and original figure PDFs, keyboard-accessible dialogs, labeled filters, reduced-motion support, table scrolling and PDF fallback links are included. Google Fonts are optional; system fonts keep the site usable offline.
