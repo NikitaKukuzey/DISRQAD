@@ -1,0 +1,4 @@
+paper-source/
+tmp/
+__pycache__/
+node_modules/
