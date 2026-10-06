@@ -57,17 +57,13 @@ $('gap-chart').innerHTML = selected.map(name=>{
 const pilot = [[10,.982547,.969290,.990110],[11,.978173,.961658,.987619],[12,.973870,.954175,.985165],[13,.983084,.970229,.990415],[14,.983596,.971124,.990706],[15,.988575,.979851,.993534],[16,.991869,.985641,.995402],[17,.993483,.988485,.996316],[18,.997356,.997356,.998507],[19,.998654,.997617,.999240]];
 $('pilot-body').innerHTML = pilot.map(r=>`<tr class="${r[0]===13?'highlight':''}"><td>${r[0]}</td>${r.slice(1).map(n=>`<td>${n.toFixed(6)}</td>`).join('')}</tr>`).join('');
 
-function renderGallery(filter='all') {
-  $('gallery-grid').innerHTML = data.figures.filter(f=>f.id!=='figure2' && (filter==='all'||figureInfo[f.id][2]===filter)).map(f=>{
+function renderGallery() {
+  $('gallery-grid').innerHTML = data.figures.filter(f=>figureInfo[f.id]?.[2]==='paper').map(f=>{
     const [title,caption,kind]=figureInfo[f.id];
     return `<article class="gallery-card gallery-${kind}"><button data-zoom="${escapeHTML(f.id)}" aria-label="Enlarge ${escapeHTML(title)}"><img src="assets/figures/${f.file}" alt="${escapeHTML(title)}" loading="lazy" width="${f.width}" height="${f.height}"></button><div class="gallery-info"><p class="eyebrow">${kind==='paper'?'PAPER FIGURE':'PROJECT EXTRA'} · ${escapeHTML(f.id)}</p><h3>${escapeHTML(title)}</h3><p>${escapeHTML(caption)}</p></div></article>`;
   }).join('');
 }
 renderGallery();
-document.querySelectorAll('[data-gallery]').forEach(button=>button.addEventListener('click',()=>{
-  document.querySelectorAll('[data-gallery]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});
-  renderGallery(button.dataset.gallery);
-}));
 
 const dialog=$('figure-dialog');
 document.addEventListener('click',e=>{

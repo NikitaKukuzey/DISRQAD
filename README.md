@@ -20,14 +20,14 @@ Alternatively select **Deploy from a branch → main → / (root)**. All asset p
 
 - Main article: construction, human protocol, all 51 standard and 11 adapted configurations, 28 condition rows, fine-tuning and student comparison.
 - Supplementary: source features, thresholds, LR settings, sampling, pilot and rating-count data, architecture, losses, optimizer settings, private-split adaptation and limitations.
-- Visual archive: 21 research figures, including unused variants. `figure2.pdf` is a formatting-template example and is excluded.
+- Visual archive: the 10 figures used in the final article, including supplementary material. Unused project variants are not displayed.
 - `assets/paper/DISRQAD.pdf`: the exact supplied 21-page PDF, with a page-one preview and optional embedded viewer.
 - Logos: [official MSU brandbook](https://brandbook.msu.ru/) and [MSU Institute for AI](https://www.iai.msu.ru/); owned by the respective institutions.
 - Dataset: https://huggingface.co/datasets/visualprior/DISRQAD
 - arXiv: clearly labeled placeholder, with no invented paper ID.
 - Citation: provisional manuscript entry, with no guessed date or venue.
 
-Project variants may contain older annotations. They are labeled **Project extra** and do not override the final paper.
+Unused project assets remain in the repository but are not displayed in the visual archive.
 
 ## Editing
 
