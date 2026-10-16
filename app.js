@@ -85,7 +85,6 @@ dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoun
 dialog.addEventListener('close',()=>document.body.classList.remove('dialog-open'));
 
 $('show-adapted').addEventListener('click',()=>{$('metric-variant').value='adapted';$('metric-type').value='all';$('metric-search').value='';renderMetrics();});
-$('arxiv-placeholder').addEventListener('click',()=>{$('arxiv-status').textContent='The arXiv preprint is not public yet. You can read the supplied PDF below.';});
 $('toggle-pdf').addEventListener('click',()=>{
   const panel=$('pdf-embed');
   panel.hidden=!panel.hidden;

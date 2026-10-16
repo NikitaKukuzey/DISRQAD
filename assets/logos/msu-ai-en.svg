@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 72" role="img" aria-labelledby="title">
+  <title>MSU Institute for Artificial Intelligence</title>
+  <rect width="360" height="72" rx="10" fill="#122a66"/>
+  <circle cx="34" cy="36" r="18" fill="#fff" opacity=".95"/>
+  <path d="M23 43V28l11 9 11-9v15h-6v-6l-5 4-5-4v6z" fill="#122a66"/>
+  <text x="68" y="31" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">MSU INSTITUTE FOR</text>
+  <text x="68" y="51" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">ARTIFICIAL INTELLIGENCE</text>
+</svg>
